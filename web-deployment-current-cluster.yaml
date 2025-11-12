@@ -18,6 +18,6 @@ spec:
         - image: bootdotdev/synergychat-web:latest
           name: synergychat-web
           resources: {}
-          envFrom:
+          envFrom: # This is the crucial new part!
             - configMapRef:
                 name: synergychat-web-configmap
