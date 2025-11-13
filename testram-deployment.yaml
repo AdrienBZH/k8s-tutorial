@@ -13,7 +13,7 @@ spec:
     metadata:
       labels:
         app: synergychat-testram
-    spec:
+    spec: 
       containers:
         - image: bootdotdev/synergychat-testram:latest
           name: synergychat-testram
@@ -22,4 +22,6 @@ spec:
                 name: synergychat-testram-configmap
           resources:
             limits:
-              memory: 256Mi
+              memory: 40000Mi
+            requests:
+              memory: 40000Mi
